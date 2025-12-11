@@ -3,29 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>Magazine Project - Sara Truffi</title>
-    
     <style>
-      body { font-family: Open Sans, sans-serif; background: #fcfaf5; }
-      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif;
+        background: #fcfaf5;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 30px 20px;
+      }
+
       nav ul { list-style: none; padding: 20px 0; }
       nav ul li { display: inline; margin-right: 20px; }
       nav a {
         text-decoration: none;
         font-size: 18px;
-        font-family: Open Sans, sans-serif;
+        font-family: "Open Sans", sans-serif;
         color: #d14f9c;
         padding: 6px 10px;
       }
       nav a:hover { color: #ffb6db; }
       nav a:active { color: #aa2f79; }
       nav a:visited { color: #c6428f; }
-      
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 30px 20px;
-      }
-      
+
       .top-section {
         display: flex;
         align-items: flex-start;
@@ -33,20 +41,26 @@
         margin-top: 30px;
         margin-bottom: 30px;
       }
-      
+
       .cover img {
         display: block;
         width: 400px;
         height: auto;
       }
-      
+
+      .mag-text h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
       p {
         font-size: 18px;
         line-height: 1.6;
         color: #333;
         max-width: 400px;
       }
-      
+
       .bottom-section {
         display: flex;
         align-items: flex-start;
@@ -54,30 +68,33 @@
         margin-top: 30px;
         margin-bottom: 60px;
       }
-      
+
       .bottom-img img {
-        width: 400px; 
+        width: 400px;
         height: auto;
       }
-      
+
       .six-grid {
+        max-width: 1200px;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 50px 0;
+        gap: 20px;
       }
-      
+
       .six-grid img {
         width: 100%;
         height: auto;
+        display: block;
       }
-      
+
       footer {
         background-color: #d14f9c;
         color: white;
         text-align: center;
         padding: 20px 0;
         margin-top: 60px;
-        font-family: Open Sans, sans-serif;
+        font-family: "Open Sans", sans-serif;
       }
     </style>
   </head>
@@ -93,36 +110,47 @@
       </nav>
       <div class="top-section">
         <div class="cover">
-        <img src="project3.png" alt="description of image">
-      </div>
-      
-      <div class="mag-text">
-        <h1>Magazine</h1>
-        <p>This project was created for a first-year GBDA course as a personal reflection on my growth. Entering this course, I came from a strong fine arts background, but I wasn’t fully confident in applying my ideas through design. I was comfortable creating visually expressive work, but I didn’t yet understand how to balance creativity with structure and user experience. This project became a space to reflect on where I started, what inspires my visual style, and how my perspective on design has grown throughout the semester as I learned new tools and ways of thinking.
-</p>
+          <img src="project3.png" alt="Front cover of the magazine project" width="400" height="550">
+        </div>
+        <div class="mag-text">
+          <h1>Magazine</h1>
+          <p>This project was created for a first-year GBDA course as a personal
+            reflection on my growth. Entering this course, I came from a strong
+            fine arts background, but I wasn’t fully confident in applying my
+            ideas through design.</p>
+          <p>I was comfortable creating visually expressive work, but I didn’t
+            yet understand how to balance creativity with structure and
+            user experience. This project became a space to reflect on where
+            I started, what inspires my visual style, and how my perspective
+            on design has grown throughout the semester as I learned new tools
+            and ways of thinking.</p>
+        </div>
       </div>
     </div>
-    </div>
-
     <div class="six-grid">
-      <img src="page1.png" alt="Magazine Image 1">
-      <img src="page2.png" alt="Magazine Image 2">
-      <img src="page3.png" alt="Magazine Image 3">
-      <img src="page4.png" alt="Magazine Image 4">
-      <img src="page5.png" alt="Magazine Image 5">
-      <img src="page6.png" alt="Magazine Image 6">
-</div>
-  <div class="container">
-  <div class="bottom-section">
-  <div class="bottom-text">
-    <p>By the end of this project, I began to see design as more than just aesthetics, but about communication and problem-solving. Exploring colour, shape, typography, and symbolism helped me understand what draws me to certain designs and how those influences shape my own work. This reflection captures my growth in confidence and shows how I’m learning to bridge my fine arts background with purposeful, user-focused design as I move forward.</p>
-  </div>
-
-  <div class="bottom-img">
-    <img src="cover.png" alt="Back Cover of Magazine">
-  </div>
-</div>
-</div>
+      <img src="page1.png" alt="Magazine interior page 1" width="600" height="800">
+      <img src="page2.png" alt="Magazine interior page 2" width="600" height="800">
+      <img src="page3.png" alt="Magazine interior page 3" width="600" height="800">
+      <img src="page4.png" alt="Magazine interior page 4" width="600" height="800">
+      <img src="page5.png" alt="Magazine interior page 5" width="600" height="800">
+      <img src="page6.png" alt="Magazine interior page 6" width="600" height="800">
+    </div>
+    <div class="container">
+      <div class="bottom-section">
+        <div class="bottom-text">
+          <p>By the end of this project, I began to see design as more than just
+            aesthetics, but about communication and problem-solving. Exploring
+            colour, shape, typography, and symbolism helped me understand what
+            draws me to certain designs and how those influences shape my own work.</p>
+          <p>This reflection captures my growth in confidence and shows how I’m
+            learning to bridge my fine arts background with purposeful,
+            user-focused design as I move forward.</p>
+        </div>
+        <div class="bottom-img">
+          <img src="cover.png" alt="Back cover of the magazine project" width="400" height="550">
+        </div>
+      </div>
+    </div>
     <footer>@ 2025 Sara Truffi - All Rights Reserved</footer>
   </body>
 </html>
